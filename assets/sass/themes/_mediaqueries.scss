@@ -1,0 +1,67 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: $pantallaExtraSmall) {
+
+    .cabecera__boton{
+        display: block;
+        position: relative;
+        left:75%;
+    }
+
+    .cabecera__contenedorLista{
+        display: none;
+    }
+
+    .cabecera__lista{
+        display: block;
+    }
+    
+    .cabecera__lista__elemento{
+        display: inherit;
+    }
+
+    .principal__izquierda__contenedortextoDerecha{
+        display: none;
+    }
+
+    .principal__izquierda__contenedortextoIzquierda{
+        width: 100%;
+        display: none;
+    }
+
+    .principal__izquierda__buscador{
+        display: none;
+    }
+
+    .principal__izquierda__mostrarChats{
+        display: block;
+    }
+
+    .principal__derecha{
+        font-size: $fuentePequena;
+    }
+
+    .principal__derecha--cursiva{
+        font-size: $fuenteNormal;
+    }
+
+    .principal__izquierda__contenedorimagen__contenido{
+        position: relative;
+        right: 40%;
+    }
+
+}
+
+
+@media only screen and (min-width: $pantallaMedium) {
+    .cabecera__contenedorLista{
+        display: block;
+    }
+    
+    .principal__izquierda__contenedortextoIzquierda{
+        display: inherit;
+    }
+
+    .cabecera{
+        background-color: red;
+    }
+}

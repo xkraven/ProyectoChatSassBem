@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link bootstrap>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <button class="cabecera__boton" onclick="mostrarMenuPagina()">Mostrar Menu</button>
+        <div class="cabecera__contenedorLista">
+            <ul class="cabecera__lista">
+                <li class="cabecera__lista__elemento">Página Principal |</li>
+                <li class="cabecera__lista__elemento">Preguntas Frecuentes |</li>
+                <li class="cabecera__lista__elemento">Manuales y Tutoriales |</li>
+                <li class="cabecera__lista__elemento">Noticias |</li>
+                <li class="cabecera__lista__elemento">Calendario |</li>
+                <li class="cabecera__lista__elemento">Administracion de perfil |</li>
+                <li class="cabecera__lista__elemento">Organigrama |</li>
+                <li class="cabecera__lista__elemento">Chat</li>
+            </ul>
+        </div>
+
+    </header>
+    <main class="principal">
+        <aside class="principal__izquierda">
+            <article class="principal__izquierda__buscador">
+                <form action="" method="">
+                    <input type="text" id="txtbusqueda" name="txtbusqueda" size="16"><input type="button" value="buscar">
+                </form>
+            </article>
+
+            <article class="principal__izquierda__mostrarChats">
+                <form action="" method="">
+                    <input class="principal__izquierda__mostrarChats__boton" type="button" value="mostrar chats" onclick="mostrarContenedoresChat()">
+                </form>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/barbaro.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Barbaro <span class="principal__izquierda__fecha"> 6 Junio 666</span></p>
+                </aside>
+            </article>
+            
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/paladin.jpg" alt="hisoka" onclick="mostrarChatUno()">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Paladin <span class="principal__izquierda__fecha"> 6 Junio 666</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/nigromante.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Nigromante <span class="principal__izquierda__fecha"> 6 Junio 666</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/druida.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Druida <span class="principal__izquierda__fecha"> 6 Junio 666</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/amazona.jpg" alt="hisoka">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Amazona <span class="principal__izquierda__fecha"> 6 Junio 666</span></p>
+                </aside>
+            </article>
+
+            <article class="principal__izquierda__chat">
+                <aside class="principal__izquierda__contenedortextoIzquierda">
+                    <figure class="principal__izquierda__contenedorimagen">
+                        <img class="principal__izquierda__contenedorimagen__contenido" src="assets/img/asesina.jpg" alt="asesina">
+                    </figure>
+                </aside>
+
+                <aside class="principal__izquierda__contenedortextoDerecha">
+                    <p>Asesina <span class="principal__izquierda__fecha"> 24 Abr 2023</span></p>
+                </aside>
+            </article>
+
+        </aside>
+        <section class="principal__derecha">
+
+            <article class="principal__derecha__chat" style="text-align: center; padding-left: 10%;">
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <figure class="principal__derecha__contenedorimagen">
+                        <img class="principal__derecha__contenedorimagen__contenido" src="assets/img/barbaro.jpg" alt="barbaro">
+                    </figure>
+                </aside>
+                <br>
+                <aside class="principal__derecha__contenedortextoDerecha" style="text-align: center; padding-left: 10%;">
+                    <p><span class="principal__derecha__fecha">Barbaro</span>
+                </aside>
+            </article>
+            <hr>
+            <article class="principal__derecha__chat">
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <figure class="principal__derecha__contenedorimagen">
+                        <img class="principal__derecha__contenedorimagen__contenido" src="assets/img/barbaro.jpg" alt="barbaro">
+                    </figure>
+                </aside>
+
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <p><span class="principal__derecha__fecha">Acompañame a matar a Andariel?</span><br><span class="principal__derecha__fecha">      3:00 AM</span></p>
+                </aside>
+            </article>
+            <hr>
+
+            <article class="principal__derecha__chat_derecha">
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <figure class="principal__derecha__contenedorimagen">
+                        <img class="principal__derecha__contenedorimagen__contenido" src="assets/img/nigromante.jpg" alt="barbaro">
+                    </figure>
+                </aside>
+
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <p><span class="principal__derecha__fecha"> Pues claro! donde estas?</span><br><span class="principal__derecha__fecha">      3:01 AM</span></p>
+                </aside>
+            </article>
+            <hr>
+
+            <article class="principal__derecha__chat">
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <figure class="principal__derecha__contenedorimagen">
+                        <img class="principal__derecha__contenedorimagen__contenido" src="assets/img/barbaro.jpg" alt="barbaro">
+                    </figure>
+                </aside>
+
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <p><span class="principal__derecha__fecha"> Estoy en las Catacumbas nivel 4</span><br><span class="principal__derecha__fecha">      3:01 AM</span></p>
+                </aside>
+            </article>
+            <hr>
+
+            <article class="principal__derecha__chat_derecha">
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <figure class="principal__derecha__contenedorimagen">
+                        <img class="principal__derecha__contenedorimagen__contenido" src="assets/img/nigromante.jpg" alt="barbaro">
+                    </figure>
+                </aside>
+
+                <aside class="principal__derecha__contenedortextoDerecha">
+                    <p><span class="principal__derecha__fecha"> Ok, invoco el golem sangriento, mis esqueletos y voy!</span><br><span class="principal__derecha__fecha">     3:03 AM</span></p>
+                </aside>
+            </article>
+
+            <button class="principal__derecha__boton" onclick="cambiarFuenteCursiva()">Cambiar la Fuente a Cursiva</button>
+            <button class="principal__derecha__boton" onclick="cambiarFuenteOrbitron()" disabled>Cambiar la Fuente a Orbitron</button>
+
+        </section>
+    </main>
+    <footer class="pie">
+        <p class="pie__parrafo"> Todos los Derechos Reservados &copy;</p>
+        <p class="pie__parrafo">Created By KrAvEn</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

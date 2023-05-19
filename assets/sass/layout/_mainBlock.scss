@@ -1,0 +1,108 @@
+.cabecera{
+    text-align: center;
+}
+
+.cabecera__boton{
+    display: none;
+}
+
+.cabecera__contenedorLista{
+    display: block;
+}
+
+.cabecera__contenedorLista--noMostrar{
+    display: none;
+}
+
+.cabecera__lista{
+    display: inline-block;
+}
+
+.cabecera__lista__elemento{
+    display: inherit;
+}
+
+
+
+.principal{
+    display: inline-block;
+    width:100%;
+}
+
+
+.principal__izquierda{
+    background-color: black;
+    width: 25%;
+    display: inherit;
+}
+
+.principal__izquierda__buscador{
+    color:$colorLetra;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.principal__izquierda__mostrarChats{
+    display: none;
+}
+
+.principal__izquierda__chat{
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: inline-block;
+}
+
+.principal__izquierda__fecha{
+    font-size: $fuentePequena;
+    color: $colorPequeno;
+}
+
+.principal__izquierda__imagen{
+    width:100%;
+}
+
+.principal__izquierda__contenedorimagen{
+
+    width:100%;
+    text-align: left;
+    
+}
+
+.principal__izquierda__contenedortextoDerecha{
+    background-color: fuchsia;
+    display: inherit;
+    width:27%;
+}
+
+.principal__izquierda__contenedortextoIzquierda{
+    background-color: rgb(132, 37, 8);
+    display: inherit;
+    width:70%;
+}
+
+.principal__izquierda__contenedorimagen__contenido{
+    position: static;
+    width: 80%;
+    border-radius: 100%;
+}
+
+.principal__derecha{
+    background-color: pink;
+    width: 72%;
+    display: inherit;
+    //font-family: 'Dancing Script', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-size: $fuenteGigante;
+}
+
+
+.principal__derecha--cursiva{
+    background-color: green;
+    width: 72%;
+    display: inherit;
+    font-family: 'Dancing Script', cursive;
+    font-size: $fuenteExtraGigante;
+    //font-family: 'Orbitron', sans-serif;
+}

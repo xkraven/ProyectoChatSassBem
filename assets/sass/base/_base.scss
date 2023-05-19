@@ -1,0 +1,12 @@
+// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+// traemos fuente orbitron por cdn
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+// traemos fuente dancing script de manera local
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"),  url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+  }

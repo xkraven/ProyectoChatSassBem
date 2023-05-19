@@ -1,0 +1,21 @@
+/* abstracts*/
+@import 'abstracts/variables';
+
+/*vendors*
+
+/*base*/
+@import 'base/base';
+
+/*layout*/
+@import 'layout/mainBlock';
+@import 'layout/cabecera';
+@import 'layout/pie';
+
+/*components*/
+@import 'components/botones';
+
+
+/*pages*/
+
+/*themes*/
+@import 'themes/mediaqueries';

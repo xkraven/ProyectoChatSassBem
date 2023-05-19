@@ -1,0 +1,232 @@
+/* abstracts*/
+/*vendors*
+
+/*base*/
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: normal;
+  src: local("?"), url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+/*layout*/
+.cabecera {
+  text-align: center;
+}
+
+.cabecera__boton {
+  display: none;
+}
+
+.cabecera__contenedorLista {
+  display: block;
+}
+
+.cabecera__contenedorLista--noMostrar {
+  display: none;
+}
+
+.cabecera__lista {
+  display: inline-block;
+}
+
+.cabecera__lista__elemento {
+  display: inherit;
+}
+
+.principal {
+  display: inline-block;
+  width: 100%;
+}
+
+.principal__izquierda {
+  background-color: black;
+  width: 25%;
+  display: inherit;
+}
+
+.principal__izquierda__buscador {
+  color: #EBD558;
+  background-color: rgb(208, 10, 10);
+  padding-left: 40px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.principal__izquierda__mostrarChats {
+  display: none;
+}
+
+.principal__izquierda__chat {
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: inline-block;
+}
+
+.principal__izquierda__fecha {
+  font-size: 15px;
+  color: #0BEEF5;
+}
+
+.principal__izquierda__imagen {
+  width: 100%;
+}
+
+.principal__izquierda__contenedorimagen {
+  width: 100%;
+  text-align: left;
+}
+
+
+
+.principal__izquierda__contenedortextoIzquierda {
+  background-color: black;
+  display: inherit;
+  width: 70%;
+}
+
+.principal__izquierda__contenedorimagen__contenido {
+  position: static;
+  width: 80%;
+  border-radius: 100%;
+}
+
+/* derecha */
+
+.principal__derecha {
+  background-color: rgb(208, 10, 10);
+  width: 72%;
+  display: inherit;
+  font-family: "Orbitron", sans-serif;
+  font-size: 12px;
+}
+
+.principal__derecha--cursiva {
+  background-color: rgb(208, 10, 10);
+  width: 72%;
+  display: inherit;
+  font-family: "Dancing Script", cursive;
+  font-size: 12px;
+}
+
+.principal__derecha__chat {
+  color: white;
+  padding-top: 6%;
+  padding-bottom: 7%;
+  display: inline-block;
+}
+
+.principal__derecha__contenedorimagen {
+  width: 100%;
+  text-align: left;
+}
+
+.principal__derecha__contenedorimagen__contenido {
+  position: static;
+  width: 80%;
+  border-radius: 100%;
+}
+
+.principal__derecha__contenedortextoDerecha {
+  background-color: rgb(208, 10, 10);
+  display: inherit;
+  width: 27%;
+}
+
+.principal__derecha__fecha {
+  font-size: 18px;
+  color: black;
+  text-align: end;
+}
+
+/* chat derecha */
+
+.principal__derecha__chat_derecha {
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  right: 0;
+}
+
+/* otros */
+
+.cabecera {
+  background-color: #EBD558;
+}
+
+.pie {
+  background-color: red;
+}
+
+.pie__parrafo {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+/*components*/
+.principal__izquierda__mostrarChats__boton {
+  position: absolute;
+  top: 30px;
+}
+
+/*pages*/
+/*themes*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+  .cabecera__boton {
+    display: block;
+    position: relative;
+    left: 75%;
+  }
+  .cabecera__contenedorLista {
+    display: none;
+  }
+  .cabecera__lista {
+    display: block;
+  }
+  .cabecera__lista__elemento {
+    display: inherit;
+  }
+  .principal__izquierda__contenedortextoDerecha {
+    display: none;
+  }
+  .principal__izquierda__contenedortextoIzquierda {
+    width: 100%;
+    display: none;
+  }
+  .principal__izquierda__buscador {
+    display: none;
+  }
+  .principal__izquierda__mostrarChats {
+    display: block;
+  }
+  .principal__derecha {
+    font-size: 11.5px;
+  }
+  .principal__derecha--cursiva {
+    font-size: 14.5px;
+  }
+  .principal__izquierda__contenedorimagen__contenido {
+    position: relative;
+    right: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cabecera__contenedorLista {
+    display: block;
+  }
+  .principal__izquierda__contenedortextoIzquierda {
+    display: inherit;
+  }
+  .cabecera {
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
